@@ -95,6 +95,9 @@ $(this).find(".slick-dots").addClass("container");
 	});
 	*/
 
+		var texts = document.querySelectorAll(".slider-advantages .swiper-slide"),
+	suball = texts.length;
+
 	var swiper = new Swiper('.swiper-container', {
 		pagination: '.swiper-pagination',
 		nextButton: '.swiper-button-next',
@@ -107,7 +110,7 @@ $(this).find(".slick-dots").addClass("container");
 		speed: 1000,
 		mousewheelReleaseOnEdges: true,
 		paginationBulletRender: function (index, className) {
-			return '<span class="' + className + '">' +'<span>'  + (index + 1) + ' / </span>'+ '</span>';
+			return '<span class="' + className + '">' +'<span>'  + (index + 1) +' / '+suball+' </span>'+ '</span>';
 		}
 	});
 
@@ -115,9 +118,8 @@ $(this).find(".slick-dots").addClass("container");
 
 
 
-	var texts = document.querySelectorAll(".slider-advantages .swiper-slide"),
-	suball = texts.length;
-	$('.swiper-pagination-bullet span').append(suball);
+
+
 
 
 	 // стайлер для select
