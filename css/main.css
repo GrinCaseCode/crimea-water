@@ -280,6 +280,7 @@ text-align: center;
 	color: #fff;
 	display: inline-flex;
 	align-items: center;
+	text-align: left;
 }
 .icon-video {
 	width: 74px;

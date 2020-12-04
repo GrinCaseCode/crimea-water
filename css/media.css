@@ -484,8 +484,9 @@ br + br {
 }
 .line-subscribe .btn-main {
     width: 128px;
-    height: 48px;
+    height: 56px;
     font-size: 14px;
+    margin-top: -5px;
 }
 .swiper-button-next {
 	display: none;
