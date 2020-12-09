@@ -118,7 +118,21 @@ $(this).find(".slick-dots").addClass("container");
 
 
 
+var $btn_fix = $(".btn_top");
+$(window).scroll(function(){
+	if ( $(this).scrollTop() > 100 && $btn_fix.hasClass("default") ){
+		$btn_fix.removeClass("default").addClass("active");
+	} else if($(this).scrollTop() <= 100 && $btn_fix.hasClass("active")) {
+		$btn_fix.removeClass("active").addClass("default");
+	}
+	
+});
 
+if ( $(this).scrollTop() > 100 && $btn_fix.hasClass("default") ){
+	$btn_fix.removeClass("default").addClass("active");
+} else if($(this).scrollTop() <= 100 && $btn_fix.hasClass("active")) {
+	$btn_fix.removeClass("active").addClass("default");
+}
 
 
 
@@ -130,7 +144,6 @@ $(this).find(".slick-dots").addClass("container");
 	//<a class="fancybox"><img src="image.jpg" /></a>
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
 	$(".fancybox").fancybox();
-
 
 
 

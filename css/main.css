@@ -1472,3 +1472,23 @@ position: relative;
 	font-size: 13px;
 	margin-left: 35px;
 }
+
+.footer__bottom  {
+	padding: 30px 0;
+}
+.btn_top {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	opacity: 0;
+	visibility: hidden;
+}
+.btn_top.active {
+	visibility: visible;
+	opacity: 1;
+}
+.image-leaves {
+	position: absolute;
+    bottom: -50px;
+    left: -169px;
+}

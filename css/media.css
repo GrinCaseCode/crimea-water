@@ -206,6 +206,14 @@ body {
 .subscribe__title {
 	padding-bottom: 20px;
 }
+.image-leaves img {
+	max-width: 300px;
+	height: auto;
+}
+.image-leaves {
+	left: 0;
+	bottom: 0;
+}
 }
 
 /* Small Devices, Tablets */
@@ -321,6 +329,9 @@ br + br {
 }
 .swiper-button-next {
 	bottom: 77px;
+}
+.image-leaves {
+	display: none;
 }
 }
 /* Extra Small Devices, Phones */
