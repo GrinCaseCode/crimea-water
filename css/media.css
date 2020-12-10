@@ -1,4 +1,11 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1740px) {
+.billbord .title-page  {
+    font-size: 40px;
+    line-height: 62px;
+}
+
+}
 @media only screen and (max-width : 1660px) {
 .sidebar-fixed {
 	width: 300px;
@@ -29,6 +36,18 @@
 	left: 300px;
 }
 }
+
+@media only screen and (max-width : 1500px) {
+.billbord .title-page span,
+.value-title, 
+.billbord .title-page {
+    font-size: 33px;
+    line-height: 46px;
+}
+.order .title-page br {
+	display: none;
+}
+}
 @media only screen and (max-width : 1350px) {
 body {
 	font-size: 14px;
@@ -46,10 +65,7 @@ body {
 .item-billbord_2 {
 	width: 450px;
 }
-.title-page {
-    font-size: 35px;
-    line-height: 49px;
-}
+
 .billbord .title-page {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -81,6 +97,12 @@ body {
     .item-product__image {
     height: 245px;
     padding: 30px 10px;
+}
+ .billbord .title-page span,
+  .value-title,
+   .billbord .title-page {
+    font-size: 29px;
+    line-height: 43px;
 }
 }
 /* Large Devices, Wide Screens */
@@ -121,6 +143,9 @@ body {
 .slider-advantages__item .container {
 	padding-bottom: 100px;
 }
+.products .title-page {
+    max-width: 765px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -213,6 +238,10 @@ body {
 .image-leaves {
 	left: 0;
 	bottom: 0;
+}
+.billbord .title-page span, .value-title, .billbord .title-page {
+    font-size: 30px;
+    line-height: 43px;
 }
 }
 
@@ -333,6 +362,12 @@ br + br {
 .image-leaves {
 	display: none;
 }
+.products .title-page {
+	padding-bottom: 0;
+}
+.products .head-page {
+	padding-bottom: 30px;
+}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px) {
@@ -346,6 +381,21 @@ br + br {
 }
 .billbord__btns .btn-video {
 	margin-top: 30px;
+}
+.billbord .title-page{
+    font-size: 27px;
+    line-height: 39px;
+}
+.value-title {
+    margin-left: 0;
+    position: relative;
+    left: 0;
+}
+.billbord .title-page span, 
+.value-title {
+    font-size: 25px;
+    height: 45px;
+    line-height: 36px;
 }
 }
 /* Extra Small Devices, Phones */
@@ -501,6 +551,19 @@ br + br {
 }
 .swiper-button-next {
 	display: none;
+}
+.billbord .title-page span, 
+.value-title {
+	margin-bottom: 9px;
+}
+.value-title::after {
+	top: 25px;
+}
+.phone-main i  {
+	display: inline-block;
+}
+.btn-viber {
+	display: none;	
 }
 }
 
