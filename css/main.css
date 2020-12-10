@@ -1494,7 +1494,7 @@ position: relative;
 .sidebar-fixed__top {
 	padding: 0 15px;
 }
-.order .title-page span {
+.order .title-page span { 
     padding: 0 15px;
     display: inline-flex;
     align-items: center;
