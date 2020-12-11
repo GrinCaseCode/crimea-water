@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.6" />
-	<link rel="stylesheet" href="css/media.css?ver=1.6" />
+	<link rel="stylesheet" href="css/main.css?ver=1.7" />
+	<link rel="stylesheet" href="css/media.css?ver=1.7" />
 </head>
 <body>
 
@@ -73,9 +73,19 @@
 			</ul>
 		</div>
 
+		<div class="menu-bottom">
+			<div class="container">
+				<div class="menu-bottom__wrap">
+					<a href="#" class="btn-menu-bottom"><i class="fas fa-home"></i></a>
+					<a href="#" class="btn-menu-bottom"><i class="fas fa-shopping-basket"></i><span class="btn-menu-bottom__value">1</span></a>
+					<a href="#" class="btn-menu-bottom"><i class="fas fa-user"></i></a>
+				</div>
+			</div>
+		</div>
+
 		<div class="content">
 
-			<header class="header default">
+			<header class="header">
 				<div class="container">
 					<div class="header__top">
 						<span class="btn-nav">
@@ -85,6 +95,7 @@
 								<span class='sw-footer'></span>
 							</span>
 						</span>
+						<div class="btn-nav_fake"></div>
 						<div class="location-wrap">
 							<p>Город для доставки воды:</p>
 							<div class="location-block">
@@ -96,6 +107,10 @@
 								</ul>
 							</div>
 						</div>
+						<a href="#" class="logo-header">
+							<img src="img/logo.png" alt="alt">
+							<span>Крупнейший в Крыму производитель воды и безалкогольных напитков</span>
+						</a>
 						<div class="item-header">
 							<p>Режим доставки:</p>
 							<p>Пн-Пт: 09:00 – 19:00; Сб: 09:00 – 17:00</p>
@@ -278,8 +293,8 @@
 						<h2 class="title-page title-page_main">Товары, с которыми будет удобно пользоваться нашей водой</h2>
 						<a href="#" class="link-simple">Все товары</a>
 					</div>
-					<div class="row row_products">
-						<div class="col-lg-3 col-6">
+					<ul class="slider-products">
+						<li>
 							<div class="item-product">
 								<div class="item-product__image">
 									<img src="img/product1.jpg" alt="alt">
@@ -290,8 +305,8 @@
 								<p>Водораздатчик Aqua Work 0.7-TWR бело&nbsp;-&nbsp;черный</p>
 								<a href="#" class="link-simple">Подробнее</a>
 							</div>
-						</div>
-						<div class="col-lg-3 col-6">
+						</li>
+						<li>
 							<div class="item-product">
 								<div class="item-product__image">
 									<img src="img/product2.jpg" alt="alt">
@@ -302,8 +317,8 @@
 								<p>Помпа для воды Дельфин Эко голубая (в пакете)</p>
 								<a href="#" class="link-simple">Подробнее</a>
 							</div>
-						</div>
-						<div class="col-lg-3 col-6">
+						</li>
+						<li>
 							<div class="item-product">
 								<div class="item-product__image">
 									<img src="img/product1.jpg" alt="alt">
@@ -314,8 +329,8 @@
 								<p>Водораздатчик Aqua Work 0.7-TWR бело&nbsp;-&nbsp;черный</p>
 								<a href="#" class="link-simple">Подробнее</a>
 							</div>
-						</div>
-						<div class="col-lg-3 col-6">
+						</li>
+						<li>
 							<div class="item-product">
 								<div class="item-product__image">
 									<img src="img/product2.jpg" alt="alt">
@@ -326,8 +341,8 @@
 								<p>Помпа для воды Дельфин Эко голубая (в пакете)</p>
 								<a href="#" class="link-simple">Подробнее</a>
 							</div>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 
@@ -337,7 +352,59 @@
 						<h2 class="title-page title-page_main">Акции и специальные предложения</h2>
 						<a href="#" class="link-simple">Все акции</a>
 					</div>
-					<div class="row">
+					<ul class="slider-articles-mobile">
+						<li>
+							<a href="#" class="item-offer">
+								<span class="item-offer__date">01.12.2020</span>
+								<span class="item-offer__name">Вода за 100 рублей при самовывозе</span>
+								<span class="item-offer__text">При покупке от 3х бутылей воды (18,9 л) при самовывозе цена за каждый бутыль составляет 100 рублей.</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item-offer item-offer_image">
+								<span class="item-offer__date">01.12.2020</span>
+								<span class="item-offer__name">Выгодная суббота</span>
+								<span class="item-offer__text">Каждую субботу заказывайте доставку воды по специальной цене — 125 руб! Количество бутылей — неограниченно. <br><br>Доставку воды по специальной цене на субботу можно заказать с понедельника по пятницу.</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item-article">
+								<span class="item-article__image">
+									<img src="img/article1.jpg" alt="alt">
+								</span>
+								<span class="item-article__content">
+									<span class="item-article__date">01.12.2020</span>
+									<span class="item-article__name">Здоровый Крым</span>
+									<span class="item-article__text">Льготная цена на бутилированную воду «Крымская столовая» для спортивных залов цена на бутилированную воду «Крымская столовая» для спортивных залов</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item-article">
+								<span class="item-article__image">
+									<img src="img/article2.jpg" alt="alt">
+								</span>
+								<span class="item-article__content">
+									<span class="item-article__date">01.12.2020</span>
+									<span class="item-article__name">Приведи друга</span>
+									<span class="item-article__text">Каждый действующий Клиент, который приведет «Друга» — нового Клиента действующий Клиент, который приведет «Друга» — нового Клиента</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item-article">
+								<span class="item-article__image">
+									<img src="img/article3.jpg" alt="alt">
+								</span>
+								<span class="item-article__content">
+									<span class="item-article__date">01.12.2020</span>
+									<span class="item-article__name">Забота о детях</span>
+									<span class="item-article__text">Льготная цена на бутилированную воду «Крымская столовая» для детских садов, школ  для детских садов</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<div class="row tablet_hide">
 						<div class="col-lg-4">
 							<a href="#" class="item-offer">
 								<span class="item-offer__date">01.12.2020</span>
@@ -358,7 +425,7 @@
 								<span class="item-article__content">
 									<span class="item-article__date">01.12.2020</span>
 									<span class="item-article__name">Здоровый Крым</span>
-									<span class="item-article__text">Льготная цена на бутилированную воду «Крымская столовая» для спортивных залов ...</span>
+									<span class="item-article__text">Льготная цена на бутилированную воду «Крымская столовая» для детских садов, школ  для детских садов бутилированную бутилированную</span>
 								</span>
 							</a>
 							<a href="#" class="item-article">
@@ -368,7 +435,7 @@
 								<span class="item-article__content">
 									<span class="item-article__date">01.12.2020</span>
 									<span class="item-article__name">Приведи друга</span>
-									<span class="item-article__text">Каждый действующий Клиент, который приведет «Друга» — нового Клиента ...</span>
+									<span class="item-article__text">Каждый действующий Клиент, который приведет «Друга» — нового Клиента действующий Клиент, который приведет «Друга» — нового Клиента</span>
 								</span>
 							</a>
 							<a href="#" class="item-article">
@@ -378,7 +445,7 @@
 								<span class="item-article__content">
 									<span class="item-article__date">01.12.2020</span>
 									<span class="item-article__name">Забота о детях</span>
-									<span class="item-article__text">Льготная цена на бутилированную воду «Крымская столовая» для детских садов, школ  ...</span>
+									<span class="item-article__text">Льготная цена на бутилированную воду «Крымская столовая» для детских садов, школ  для детских садов бутилированную бутилированную</span>
 								</span>
 							</a>
 						</div>
@@ -446,7 +513,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-6">
-							<div class="footer__title">Карта сайта</div>
+							<div class="footer__title">Карта сайта <i class="fas fa-plus"></i></div>
 							<ul class="nav-footer">
 								<li><a href="#">О компании</a></li>
 								<li><a href="#">Оплата и доставка </a></li>
@@ -458,16 +525,16 @@
 						</div>
 						<div class="col-lg-4 col-md-6 col_pl">
 							<div class="row">
-								<div class="col-6">
-									<div class="footer__title">Личный кабинет</div>
+								<div class="col-md-6">
+									<div class="footer__title">Личный кабинет <i class="fas fa-plus"></i></div>
 									<ul class="nav-footer">
 										<li><a href="#">Вход</a></li>
 										<li><a href="#">Регистрация</a></li>
 										<li><a href="#">Мои заказы</a></li>
 									</ul>
 								</div>
-								<div class="col-6">
-									<div class="footer__title">Каталог</div>
+								<div class="col-md-6">
+									<div class="footer__title">Каталог <i class="fas fa-plus"></i></div>
 									<ul class="nav-footer">
 										<li><a href="#">Бутилированная вода</a></li>
 										<li><a href="#">Безалкогольные напитки</a></li>
@@ -475,16 +542,18 @@
 									</ul>
 								</div>
 							</div>
-							<div class="footer__title">Способы оплаты: </div>
-							<ul class="list-footer">
-								<li>онлайн на сайте картой <img src="img/ic_pay1.png" alt="alt"> <img src="img/ic_pay2.png" alt="alt"> <img src="img/ic_pay3.png" alt="alt"></li>
-								<li>наличными или безналичным способом при получении на Р/С</li>
-							</ul>
-							<a href="#" class="link-simple">Скачать реквизиты</a>
+							<div class="footer__title">Способы оплаты: <i class="fas fa-plus"></i></div>
+							<div class="dropdown-footer">
+								<ul class="list-footer">
+									<li>онлайн на сайте картой <img src="img/ic_pay1.png" alt="alt"> <img src="img/ic_pay2.png" alt="alt"> <img src="img/ic_pay3.png" alt="alt"></li>
+									<li>наличными или безналичным способом при получении на Р/С</li>
+								</ul>
+								<a href="#" class="link-simple">Скачать реквизиты</a>
+							</div>
 						</div>
 						<div class="col-lg-5">
 							<div class="row">
-								<div class="col-md-6 col_pl">
+								<div class="col-md-6 mobile_hidden col_pl">
 									<div class="footer__title">Контакты</div>
 									<p>Головной офис:</p>
 									<p>г. Симферополь, ул. Г.Сталинграда, 12</p>
@@ -503,7 +572,7 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col_pl footer__right">
-									<div class="footer__title">Филиалы</div>
+									<div class="footer__title">Филиалы <i class="fas fa-plus"></i></div>
 									<ul class="nav-footer">
 										<li><a href="#">Севастополь</a></li>
 										<li><a href="#">Феодосия</a></li>
@@ -517,6 +586,22 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="mobile_show">
+						<p>Головной офис:</p>
+						<p>г. Симферополь, ул. Г.Сталинграда, 12</p>
+						<p>тел\факс: +7 (978) 731-53-53</p>
+						<br>
+						<p>Режим доставки: &nbsp;пн-пт:&nbsp;9&nbsp;–&nbsp;19; сб:&nbsp;9&nbsp;–&nbsp;17</p>
+						<br>
+						<a href="#" class="link-simple">Написать нам</a>
+						<br>
+						<br>
+						<ul class="list-social">
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li class="list-social_vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+							<li class="list-social_ok"><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+						</ul>
 					</div>
 				</div>
 				<div class="footer__bottom">
@@ -560,7 +645,7 @@
 <script src="libs/parallax/jquery.parallax-scroll.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
 <script src="libs/swiper/swiper.min.js"></script>
-<script src="js/common.js?ver=1.6"></script>
+<script src="js/common.js?ver=1.7"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
