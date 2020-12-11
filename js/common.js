@@ -1,22 +1,6 @@
 $(document).ready(function() {
 
 
-//прилипающие меню
-var $menu = $(".header");
-$(window).scroll(function(){
-	if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
-		$menu.removeClass("default").addClass("fixed");
-	} else if($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
-		$menu.removeClass("fixed").addClass("default");
-	}
-	
-});
-
-if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
-	$menu.removeClass("default").addClass("fixed");
-} else if($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
-	$menu.removeClass("fixed").addClass("default");
-}
 
 	// mask-input 
 	$(".input-phone").mask("+7 (999) 999-99-99");
@@ -48,6 +32,20 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(".location-list").slideUp(200);
 	});
 
+
+$(".footer__title").click(function() {
+	$(".footer__title").removeClass("active");
+		
+		$(".nav-footer, .dropdown-footer").slideUp(200);
+		if ($(this).siblings(".nav-footer, .dropdown-footer").is(":hidden")) {
+			$(this).siblings(".nav-footer, .dropdown-footer").slideDown(200);
+			$(this).addClass("active");
+		} else {
+			$(this).siblings(".nav-footer, .dropdown-footer").slideUp(200);
+			$(this).removeClass("active");
+		}
+		
+	});
 	//слайдер
 
 /*
@@ -116,7 +114,59 @@ $(this).find(".slick-dots").addClass("container");
 
 
 
+$('.slider-products').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		}
+		]
+	});
 
+$('.slider-articles-mobile').slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+		]
+	});
 
 var $btn_fix = $(".btn_top");
 $(window).scroll(function(){
