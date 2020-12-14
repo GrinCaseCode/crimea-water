@@ -865,6 +865,12 @@ min-height: 100%;
 	.logo-header {
 		display: none !important;
 	}
+	.footer__title i {
+	display: none !important;
+	}
+	.footer__title {
+		pointer-events: none;
+	}
 }
 
 /* Medium Devices, Desktops */
