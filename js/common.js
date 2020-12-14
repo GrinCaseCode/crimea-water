@@ -1,12 +1,38 @@
 $(document).ready(function() {
 
+$('#fullpage').fullpage({
+	anchors: ['section-billbord', 'section-advantages', 'section-order', 'section-products', 'section-articles', 'section-bottm'],
+	responsiveHeight: 601,
+	controlArrows: true,
+	responsiveWidth: 1200,
+	normalScrollElements: false,
+	//normalScrollElements:'.advantages', 
+	scrollingSpeed: 1000,
+	menu: '.menu_list',
 
+});
+		var texts = document.querySelectorAll(".slider-advantages .swiper-slide"),
+	suball = texts.length;
+
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		nextButton: '.swiper-button-next',
+		direction: 'horizontal',
+		slidesPerView: 1,
+		paginationClickable: true,
+		spaceBetween: 0,
+		mousewheelControl: false,
+		parallax: true,
+		speed: 1000,
+		mousewheelReleaseOnEdges: true,
+		paginationBulletRender: function (index, className) {
+			return '<span class="' + className + '">' +'<span>'  + (index + 1) +' / '+suball+' </span>'+ '</span>';
+		}
+	});
 
 	// mask-input 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
-	//плавный скролл
-	$(".sidebar-list li a").mPageScroll2id();
 
 
 	//кнопка sandwich
@@ -93,24 +119,6 @@ $(this).find(".slick-dots").addClass("container");
 	});
 	*/
 
-		var texts = document.querySelectorAll(".slider-advantages .swiper-slide"),
-	suball = texts.length;
-
-	var swiper = new Swiper('.swiper-container', {
-		pagination: '.swiper-pagination',
-		nextButton: '.swiper-button-next',
-		direction: 'horizontal',
-		slidesPerView: 1,
-		paginationClickable: true,
-		spaceBetween: 0,
-		mousewheelControl: true,
-		parallax: true,
-		speed: 1000,
-		mousewheelReleaseOnEdges: true,
-		paginationBulletRender: function (index, className) {
-			return '<span class="' + className + '">' +'<span>'  + (index + 1) +' / '+suball+' </span>'+ '</span>';
-		}
-	});
 
 
 
