@@ -6,7 +6,7 @@ $(document).ready(function() {
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 	//плавный скролл
-	$(".navigat li a").mPageScroll2id();
+	$(".sidebar-list li a").mPageScroll2id();
 
 
 	//кнопка sandwich
@@ -184,6 +184,8 @@ if ( $(this).scrollTop() > 100 && $btn_fix.hasClass("default") ){
 	$btn_fix.removeClass("active").addClass("default");
 }
 
+
+ $('.flipper').flipper('init');
 
 
 	 // стайлер для select
