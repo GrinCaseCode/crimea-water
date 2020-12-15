@@ -911,7 +911,7 @@ width: 100%;
 .menu {
 	position: fixed;
 	height: 100vh;
-	max-width: 100vh;
+	max-width: 100%;
 }
 .menu-list li a {
     font-size: 20px;
