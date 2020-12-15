@@ -1,16 +1,5 @@
 $(document).ready(function() {
 
-$('#fullpage').fullpage({
-	anchors: ['section-billbord', 'section-advantages', 'section-order', 'section-products', 'section-articles', 'section-bottm'],
-	responsiveHeight: 601,
-	controlArrows: true,
-	responsiveWidth: 1200,
-	normalScrollElements: false,
-	//normalScrollElements:'.advantages', 
-	scrollingSpeed: 1000,
-	menu: '.menu_list',
-
-});
 		var texts = document.querySelectorAll(".slider-advantages .swiper-slide"),
 	suball = texts.length;
 
@@ -39,15 +28,18 @@ $('#fullpage').fullpage({
 	$(".btn-nav").click(function() {
 		$(".sandwich").toggleClass("active");
 		if ($(".menu").is(":hidden")) {
-			$(".menu").slideDown(600);
+			$(".menu").fadeIn(200);
+			$("body").addClass("body_menu");
 		} else {
-			$(".menu").slideUp(600);
+			$(".menu").fadeOut(200);
+			$("body").removeClass("body_menu");
 		}
 		
 	});
 
 	$(".menu a").click(function() {
-		$(".menu").slideUp(600);
+		$(".menu").fadeOut(200);
+		$("body").removeClass("body_menu");
 		$(".sandwich").removeClass("active");
 	});
 
