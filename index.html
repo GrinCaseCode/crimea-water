@@ -21,8 +21,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.11" />
-	<link rel="stylesheet" href="css/media.css?ver=1.11" />
+	<link rel="stylesheet" href="css/main.css?ver=1.13" />
+	<link rel="stylesheet" href="css/media.css?ver=1.13" />
 </head>
 <body>
 
@@ -90,6 +90,48 @@
 			<div id="fullpage">
 
 				<header class="header">
+					<div class="menu">
+						<div class="container">
+							<span class="btn-nav">
+								<span class='sandwich'>
+									<span class='sw-topper'></span>
+									<span class='sw-bottom'></span>
+									<span class='sw-footer'></span>
+								</span>
+							</span>
+							<div class="row">
+								<div class="col-lg-7">
+									<ul class="menu-list">
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Оплата и доставка</a></li>
+										<li><a href="#">Акции и специальные предложения</a></li>
+										<li><a href="#">Отзывы</a></li>
+										<li><a href="#">Блог</a></li>
+										<li><a href="#">Контакты и филиалы</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-5">
+									<div class="menu__title">Каталог</div>
+									<ul class="submenu-list">
+										<li><a href="#">Бутилированная вода</a></li>
+										<li><a href="#">Безалкогольные напитки</a></li>
+										<li><a href="#">Оборудование</a></li>
+									</ul>
+									<div class="menu__title">Оборудование</div>
+									<ul class="submenu-list">
+										<li><a href="#">Кулеры</a></li>
+										<li><a href="#">Помпы</a></li>
+										<li><a href="#">Стаканы и стаканодержатели</a></li>
+									</ul>
+									<ul class="social-list">
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li class="list-social_vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+										<li class="list-social_ok"><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="container">
 						<div class="header__top">
 							<span class="btn-nav">
@@ -124,7 +166,7 @@
 									<a href="tel:+79787315353" class="phone-main"><i class="fas fa-phone-alt"></i>+7 (978) <strong>731-53-53</strong></a>
 									<a href="#" class="btn-viber"><i class="fab fa-viber"></i></a>
 								</div>
-								<a href="#" class="btn-page">Перезвоните мне</a>
+								<a href="#callback" class="btn-page fancybox">Перезвоните мне</a>
 							</div>
 						</div>
 					</div>
@@ -636,6 +678,27 @@
 
 	</div>
 
+	<div id="callback" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-modal">обратный звонок</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Имя" required="required">
+				</div>
+				<div class="item-form">
+					<input type="text" class="input-phone" placeholder="+7 (___) ___-__-__" required="required">
+				</div>
+				<button class="btn-main" type="submit">Заказать звонок</button>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required="required" checked="checked" />
+						<span>Согласие на обработку персональных данных</span>
+					</label>
+				</div>
+			</form>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -657,7 +720,38 @@
 <script src="libs/parallax/jquery.parallax-scroll.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
 <script src="libs/swiper/swiper.min.js"></script>
-<script src="js/common.js?ver=1.11"></script>
+<script>
+	$(document).ready(function() {
+
+$('#fullpage').fullpage({
+	anchors: ['section-billbord', 'section-advantages', 'section-order', 'section-products', 'section-articles', 'section-bottm'],
+	responsiveHeight: 601,
+	controlArrows: true,
+	responsiveWidth: 1200,
+	normalScrollElements: false,
+	//normalScrollElements:'.advantages', 
+	scrollingSpeed: 1000,
+	menu: '.menu_list',
+
+});
+
+$(".btn-nav").click(function() {
+		if ($(".menu").is(":hidden")) {
+			$.fn.fullpage.setAllowScrolling(false);
+		} else {
+			$.fn.fullpage.setAllowScrolling(true);
+		}
+		
+	});
+
+	$(".menu a").click(function() {
+		$.fn.fullpage.setAllowScrolling(true);
+	});
+
+});
+</script>
+<script src="js/common.js?ver=1.13"></script>
+
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
