@@ -52,6 +52,10 @@
 	.footer__title {
 		padding-bottom: 8px;
 	}
+	.billbord__image {
+		margin-bottom: -300px;
+		margin-left: -285px;
+	}
 }
 @media (min-width: 1200px) and (max-height: 790px) and (min-height: 600px)  {
 	.billbord__image img {
@@ -72,6 +76,7 @@
 	.fullpage-wrapper .item-offer {
 		padding: 27px 20px;
 		padding-bottom: 20px;
+		min-height: 246px;
 	}
 	.fullpage-wrapper .item-offer_image {
 		min-height: 300px;
@@ -194,6 +199,9 @@
 }
 	.billbord .title-page {
 		padding-top: 80px;
+	}
+	.fullpage-wrapper .item-offer {
+		min-height: 240px;
 	}
 }
 @media (min-width: 1200px) and (max-height: 620px) and (min-height: 600px)  {
