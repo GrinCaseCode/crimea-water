@@ -21,8 +21,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.13" />
-	<link rel="stylesheet" href="css/media.css?ver=1.13" />
+	<link rel="stylesheet" href="css/main.css?ver=1.15" />
+	<link rel="stylesheet" href="css/media.css?ver=1.15" />
 </head>
 <body>
 
@@ -189,8 +189,8 @@
 								<div class="billbord__image" >
 									<img src="img/bottles2_3.png" alt="alt">
 								</div>
-								<div class="image-leaves" data-parallax='{"y": -80}'>
-									<img src="img/leaves.png" alt="alt">
+								<div class="image-leaves" id="img-leaves">
+									<img src="img/leaves.png"  data-depth="1.00" alt="alt">
 								</div>
 							</div>
 						</div>
@@ -299,14 +299,9 @@
 													</select>
 												</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-md-6 od_2">
 												<div class="item-form">
-													<select>
-														<option value="1">Количество бутылей</option>
-														<option value="1">Количество бутылей 2</option>
-														<option value="1">Количество бутылей 3</option>
-														<option value="1">Количество бутылей 4</option>
-													</select>
+													<input type="text" placeholder="Количество бутылей">
 												</div>
 											</div>
 											<div class="col-md-12">
@@ -711,46 +706,51 @@
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
-<script src="libs/parallax/parallax.min.js"></script>
 <script src="libs/fullPage.js-master/vendors/jquery.easings.min.js"></script>
 <script src="libs/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
 <script src="libs/fullPage.js-master/jquery.fullPage.js"></script>
-<script src="libs/parallax/jquery.easing.1.3.js"></script>
+<script src="libs/parallax-hover/parallax.min.js"></script>
 <script src="libs/responsive-flip-countdown/jquery.flipper-responsive.js"></script>
-<script src="libs/parallax/jquery.parallax-scroll.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
 <script src="libs/swiper/swiper.min.js"></script>
+
 <script>
 	$(document).ready(function() {
 
-$('#fullpage').fullpage({
-	anchors: ['section-billbord', 'section-advantages', 'section-order', 'section-products', 'section-articles', 'section-bottm'],
-	responsiveHeight: 601,
-	controlArrows: true,
-	responsiveWidth: 1200,
-	normalScrollElements: false,
+		$('#fullpage').fullpage({
+			anchors: ['section-billbord', 'section-advantages', 'section-order', 'section-products', 'section-articles', 'section-bottm'],
+			responsiveHeight: 601,
+			controlArrows: true,
+			responsiveWidth: 1200,
+			normalScrollElements: false,
 	//normalScrollElements:'.advantages', 
 	scrollingSpeed: 1000,
 	menu: '.menu_list',
 
 });
 
-$(".btn-nav").click(function() {
-		if ($(".menu").is(":hidden")) {
-			$.fn.fullpage.setAllowScrolling(false);
-		} else {
+		$(".btn-nav").click(function() {
+			if ($(".menu").is(":hidden")) {
+				$.fn.fullpage.setAllowScrolling(false);
+			} else {
+				$.fn.fullpage.setAllowScrolling(true);
+			}
+
+		});
+
+		$(".menu a").click(function() {
 			$.fn.fullpage.setAllowScrolling(true);
-		}
-		
-	});
+		});
 
-	$(".menu a").click(function() {
-		$.fn.fullpage.setAllowScrolling(true);
 	});
-
-});
 </script>
-<script src="js/common.js?ver=1.13"></script>
+<script>
+
+	var scene = document.getElementById('img-leaves');
+	var parallax = new Parallax(scene);
+
+</script>
+<script src="js/common.js?ver=1.15"></script>
 
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
