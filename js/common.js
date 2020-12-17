@@ -8,6 +8,7 @@ $(document).ready(function() {
 		nextButton: '.swiper-button-next',
 		direction: 'horizontal',
 		slidesPerView: 1,
+		 autoplay : 4000,
 		paginationClickable: true,
 		spaceBetween: 0,
 		mousewheelControl: false,

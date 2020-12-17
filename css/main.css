@@ -1057,7 +1057,8 @@ p {
 }
 .item-offer {
 	padding: 40px 30px;
-	padding-bottom: 60px;
+	padding-bottom: 15px;
+	min-height: 299px;
 	display: block;
 	color: #666;
 	margin-top: 35px;
@@ -1884,4 +1885,7 @@ p {
     }
 .row_news .col-md-8 + .col-md-4 {
 	padding-left: 0;
+}
+.advantages  {
+	background-color: #00427c;
 }
