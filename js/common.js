@@ -24,6 +24,17 @@ $(document).ready(function() {
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
+$(".link-more").click(function(e) {
+	e.preventDefault();
+	$(this).toggleClass("active");
+		if ($(this).parent().siblings(".text-page").hasClass("active")) {
+			$(this).parent().siblings(".text-page").removeClass("active");
+			$(this).find("span").html("Читать все");
+		} else {
+			$(this).parent().siblings(".text-page").addClass("active");
+			$(this).find("span").html("Свернуть");
+		}
+	});
 
 	//кнопка sandwich
 	$(".btn-nav").click(function() {

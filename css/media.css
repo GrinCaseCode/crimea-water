@@ -365,6 +365,14 @@ width: 100%;
 .row_news .item-offer {
 	    min-height: 360px;
 }
+.row_catalog .item-product .link-simple {
+	margin-left: 0;
+}
+.row_catalog .item-product p,
+.row_catalog .item-product__price {
+	padding-left: 0;
+	padding-right: 0;
+} 
 }
 
 @media only screen and (max-width : 1240px) {
@@ -1036,6 +1044,28 @@ width: 100%;
 	.slider-products {
 		margin: 0 -7px;
 	}
+	.list-tabs li a {
+    font-size: 14px;
+    height: 46px;
+    padding: 0 19px;
+    min-width: 142px;
+}
+.row_catalog > div {
+	margin-top: 20px;
+}
+.title-section {
+    font-size: 20px;
+    padding: 17px 0;
+    }
+    .link-more {
+    font-size: 15px;
+}
+.link-more i {
+    font-size: 14px;
+    }
+    .text-page {
+    line-height: 22px;
+}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -1318,6 +1348,20 @@ width: 100%;
     }
     .modal-wrap .checkbox {
     margin-top: 15px;
+}
+.list-tabs li a {
+    padding: 0 15px;
+    min-width: 131px;
+}
+.item-product__price {
+	font-size: 16px;
+}
+.old-price {
+    font-size: 12px;
+    margin-right: 9px;
+    }
+    .text-page {
+    columns: initial;
 }
 }
 @media only screen and (max-width : 340px) {
