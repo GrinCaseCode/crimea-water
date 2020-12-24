@@ -2365,3 +2365,227 @@ overflow: hidden;
 .block-contact .btn-viber {
 	vertical-align: middle;
 }
+.breadcumbs {
+	padding-bottom: 22px;
+	display: flex;
+		font-weight: 600;
+	align-items: center;
+	flex-wrap: wrap;
+	color: #00427c;
+}
+.breadcumbs i {
+	font-size: 13px;
+	margin: 0 6px;
+}
+.breadcumbs li a {
+	border-bottom: 1px transparent solid;
+	color: #00427c;
+	transition: all 0.3s;
+}
+.breadcumbs li a:hover {
+	border-color: #00427c;
+}
+.slider-card__item {
+	padding: 0 50px;
+	height: 448px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider-card__item img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.block-card {
+	line-height: 26px;
+	color: #666;
+	padding: 35px 15px;
+background-color: #fff;
+}
+.block-card span {
+	font-weight: 600;
+}
+.block-card__title {
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 25px;
+	font-weight: 800;
+	color: #00427c;
+	text-transform: uppercase;
+}
+.block-card__features {
+	margin-top: 25px;
+	line-height: 30px;
+}
+.jq-selectbox__dropdown ul {
+	max-width: 100%;
+	max-height: 200px;
+}
+.jq-selectbox__select-text {
+	border: 1px #ccc solid;
+}
+.quantity {
+	position: relative;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type=number] {
+	-moz-appearance: textfield;
+}
+.quantity-button,
+.quantity input {
+	height: 50px;
+	width: 43px;
+	border: 1px #ccc solid;
+	font-size: 16px;
+	color: #666;
+	font-family: 'Open Sans';
+	text-align: center;
+}
+.quantity input {
+	border-left: none;
+	border-right: none;
+}
+.quantity-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.quantity {
+	display: flex;
+	align-items: center;
+}
+.quantity-down {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.quantity-up {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.block-card__inputs {
+	display: flex;
+	align-items: center;
+}
+.block-card__inputs .item-form {
+	margin-right: 20px;
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+.block-card__inputs .quantity {
+	margin-top: 30px;
+}
+.jqselect {
+	display: block !important;
+}
+.block-card__inputs .jq-selectbox__select-text {
+	width: 260px;
+	padding-top: 11px;
+}
+.block-card__buttons {
+	display: flex;
+	width: 480px;
+	max-width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.block-card__buttons .btn-page,
+.block-card__buttons .btn-main {
+	height: 70px;
+	padding: 0 35px;
+	border-radius: 50px;
+	margin-top: 35px;
+	min-width: 210px;
+	text-transform: uppercase;
+}
+.slider-card .slick-arrow {
+	background-color: rgba(0, 171, 235, 0.1);
+	color: #00abeb !important;
+	transition: all 0.3s;
+}
+.slider-card .slick-arrow:hover {
+	color: #fff !important;
+		background-color: rgba(0, 171, 235, 1);
+}
+.block-card p {
+	max-width: 560px;
+}
+.slider-card {
+	max-width: 625px;
+}
+.item-packaging {
+	margin: 35px 0;
+	display: flex;
+	color: #666;
+	line-height: 26px;
+}
+.item-packaging__image {
+	min-width: 60px;
+	height: 155px;
+	margin-right: 20px;
+	display: flex;
+	flex: none;
+	align-items: flex-end;
+	justify-content: center;
+}
+.item-packaging__image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.item-packaging__content {
+	height: 100px;
+	margin-top: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.packaging-wrap {
+	max-width: 1000px;
+}
+.tab-container-card {
+	padding: 30px 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	line-height: 26px;
+		color: #666;
+}
+.content-tabs {
+	padding-top: 25px;
+}
+.list-tabs_card {
+	margin-left: 30px;
+	margin-bottom: -27px;
+	margin-top: 15px;
+	max-width: 1030px;
+}
+.list-tabs_card li {
+	flex: 1;
+}
+.list-tabs_card li a {
+	display: flex;
+}
+.recomend .title-page {
+	font-size: 30px;
+	line-height: 40px;
+	padding-top: 35px;
+}
+.recomend .row_catalog > div {
+	margin-top: 30px;
+}
+.recomend {
+	padding-bottom: 30px;
+}
+.tab-pane-card {
+	display: none;
+}
+.tab-pane-card:nth-child(2) {
+	display: block;
+}
+.header {
+	z-index: 200;
+}
